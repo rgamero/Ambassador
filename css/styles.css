@@ -29,7 +29,7 @@
 	}
 
 section {
-	min-height: 768px;
+	height: 100vh;
 }
 section h1, h2 {
 	text-align: center;
@@ -47,7 +47,7 @@ section a {
 	display: block;
 	float: right;
 	position: relative;
-	min-height: 768px;
+	height: 100vh;
 }
 .lineas .line {
 	position: absolute;
