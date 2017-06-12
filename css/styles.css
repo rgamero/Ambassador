@@ -28,9 +28,6 @@
 		box-sizing: border-box;
 	}
 
-section {
-	height: 100vh;
-}
 section h1, h2 {
 	text-align: center;
 	font-family: 'Playfair Display', serif;
@@ -53,16 +50,15 @@ section a {
 	position: absolute;
 	width: 1.3em;
 	height: 100%;
-	transform: skew(21.3deg);
-	 -webkit-transform: skew(21.3deg);
-	 -moz-transform: skew(21.3deg);
-	 -ms-transform: skew(21.3deg);
-	 -o-transform: skew(21.3deg);
-	 outline: 1px solid transparent;
+	outline: 1px solid transparent;
 }
 .lineas .line:nth-child(1) {
 	background: #212121;
-	right: 17em;
+	transform: skew(21.3deg) translateX(-17em);
+	 -webkit-transform: skew(21.3deg) translateX(-17em);
+	 -moz-transform: skew(21.3deg) translateX(-17em);
+	 -ms-transform: skew(21.3deg) translateX(-17em);
+	 -o-transform: skew(21.3deg) translateX(-17em);
 	animation: linea1 2s ease;
 	-webkit-animation: linea1 2s ease;
 	-moz-animation: linea1 2s ease;
@@ -71,17 +67,29 @@ section a {
 }
 @keyframes linea1 {
 	from {
-		right: 9.5em;
+		transform: skew(21.3deg) translateX(-9.5em);
+		 -webkit-transform: skew(21.3deg) translateX(-9.5em);
+		 -moz-transform: skew(21.3deg) translateX(-9.5em);
+		 -ms-transform: skew(21.3deg) translateX(-9.5em);
+		 -o-transform: skew(21.3deg) translateX(-9.5em);
 		opacity: 0;
 	}
   to {
-		right: 17em;
+		transform: skew(21.3deg) translateX(-17em);
+		 -webkit-transform: skew(21.3deg) translateX(-17em);
+		 -moz-transform: skew(21.3deg) translateX(-17em);
+		 -ms-transform: skew(21.3deg) translateX(-17em);
+		 -o-transform: skew(21.3deg) translateX(-17em);
 		opacity: 1;
 	}
 }
 .lineas .line:nth-child(2) {
 	background: #3F3F3F;
-	right: 14.5em;
+	transform: skew(21.3deg) translateX(-14.5em);
+	 -webkit-transform: skew(21.3deg) translateX(-14.5em);
+	 -moz-transform: skew(21.3deg) translateX(-14.5em);
+	 -ms-transform: skew(21.3deg) translateX(-14.5em);
+	 -o-transform: skew(21.3deg) translateX(-14.5em);
 	animation: linea2 2s ease;
 	-webkit-animation: linea2 2s ease;
 	-moz-animation: linea2 2s ease;
@@ -90,17 +98,29 @@ section a {
 }
 @keyframes linea2 {
 	from {
-		right: 9.5em;
+		transform: skew(21.3deg) translateX(-9.5em);
+		 -webkit-transform: skew(21.3deg) translateX(-9.5em);
+		 -moz-transform: skew(21.3deg) translateX(-9.5em);
+		 -ms-transform: skew(21.3deg) translateX(-9.5em);
+		 -o-transform: skew(21.3deg) translateX(-9.5em);
 		opacity: 0;
 	}
   to {
-		right: 14.5em;
+		transform: skew(21.3deg) translateX(-14.5em);
+		 -webkit-transform: skew(21.3deg) translateX(-14.5em);
+		 -moz-transform: skew(21.3deg) translateX(-14.5em);
+		 -ms-transform: skew(21.3deg) translateX(-14.5em);
+		 -o-transform: skew(21.3deg) translateX(-14.5em);
 		opacity: 1;
 	}
 }
 .lineas .line:nth-child(3) {
 	background: #515151;
-	right: 12em;
+	transform: skew(21.3deg) translateX(-12em);
+	 -webkit-transform: skew(21.3deg) translateX(-12em);
+	 -moz-transform: skew(21.3deg) translateX(-12em);
+	 -ms-transform: skew(21.3deg) translateX(-12em);
+	 -o-transform: skew(21.3deg) translateX(-12em);
 	animation: linea3 2s ease;
 	-webkit-animation: linea3 2s ease;
 	-moz-animation: linea3 2s ease;
@@ -109,17 +129,29 @@ section a {
 }
 @keyframes linea3 {
 	from {
-		right: 9.5em;
+		transform: skew(21.3deg) translateX(-9.5em);
+		 -webkit-transform: skew(21.3deg) translateX(-9.5em);
+		 -moz-transform: skew(21.3deg) translateX(-9.5em);
+		 -ms-transform: skew(21.3deg) translateX(-9.5em);
+		 -o-transform: skew(21.3deg) translateX(-9.5em);
 		opacity: 0;
 	}
   to {
-		right: 12em;
+		transform: skew(21.3deg) translateX(-12em);
+		 -webkit-transform: skew(21.3deg) translateX(-12em);
+		 -moz-transform: skew(21.3deg) translateX(-12em);
+		 -ms-transform: skew(21.3deg) translateX(-12em);
+		 -o-transform: skew(21.3deg) translateX(-12em);
 		opacity: 1;
 	}
 }
 .lineas .line:nth-child(4) {
 	background: #757575;
-	right: 9.5em;
+	transform: skew(21.3deg) translateX(-9.5em);
+	 -webkit-transform: skew(21.3deg) translateX(-9.5em);
+	 -moz-transform: skew(21.3deg) translateX(-9.5em);
+	 -ms-transform: skew(21.3deg) translateX(-9.5em);
+	 -o-transform: skew(21.3deg) translateX(-9.5em);
 	animation: linea4 2s ease;
 	-webkit-animation: linea4 2s ease;
 	-moz-animation: linea4 2s ease;
@@ -137,6 +169,7 @@ section a {
 #header {
 	background-color: #EAEAEA;
 	text-align: center;
+	height: 100vh;
 }
 #header h1 {
 	font-size: 2em;
@@ -145,23 +178,9 @@ section a {
 #header img {
 	width: 30%;
 	padding: 5em 0 3em;
-	animation: logo 2s ease-in-out;
-	-webkit-animation: logo 2s ease-in-out;
-	-moz-animation: logo 2s ease-in-out;
 	filter: drop-shadow( -1px -1px 2px #3F3F3F);
 	-webkit-filter: drop-shadow( -1px -1px 2px #3F3F3F);
 	-moz--filter: drop-shadow( -1px -1px 2px #3F3F3F);
-}
-
-@keyframes logo {
-    0% {
-        transform: scale(0.9);
-        -webkit-transform: scale(0.9);
-    }
-    100% {
-        transform: scale(1.0);
-        -webkit-transform: scale(1.0);
-    }
 }
 #servicios{
   background-image: url(../img/hotel.jpg);
@@ -170,6 +189,7 @@ section a {
 	background-size: auto;
 	box-shadow: 1px 1px 10px #606060;
 	padding-top: 3em;
+	min-height: 768px;
 }
 #servicios .texto {
 	font-family: 'Playfair Display', serif;
@@ -183,7 +203,6 @@ section a {
 	background-color:rgba(172, 172, 172, 0.7);
 	box-shadow: 1px 1px 10px #606060;
 	border-radius: 4px;
-	margin-bottom: 30px;
 }
 #servicios .texto h2 {
 	position: relative;
@@ -287,6 +306,7 @@ footer a img {
 		.reserva {
 			background-color: #6c6b6b;
 			color: #e2e2e2 !important;
+			margin-top: 2em;
 		}
 		.reserva:hover {
 			background-color: rgb(43, 43, 43);
@@ -423,31 +443,55 @@ footer a img {
 		}
 		@keyframes linea1 {
 			from {
-				right: 9.5em;
+				transform: skew(21.3deg) translateX(-9.5em);
+				 -webkit-transform: skew(21.3deg) translateX(-9.5em);
+				 -moz-transform: skew(21.3deg) translateX(-9.5em);
+				 -ms-transform: skew(21.3deg) translateX(-9.5em);
+				 -o-transform: skew(21.3deg) translateX(-9.5em);
 				opacity: 0;
 			}
 		  to {
-				right: 17em;
+				transform: skew(21.3deg) translateX(-17em);
+				 -webkit-transform: skew(21.3deg) translateX(-17em);
+				 -moz-transform: skew(21.3deg) translateX(-17em);
+				 -ms-transform: skew(21.3deg) translateX(-17em);
+				 -o-transform: skew(21.3deg) translateX(-17em);
 				opacity: 0.25;
 			}
 		}
 		@keyframes linea2 {
 			from {
-				right: 9.5em;
+				transform: skew(21.3deg) translateX(-9.5em);
+				 -webkit-transform: skew(21.3deg) translateX(-9.5em);
+				 -moz-transform: skew(21.3deg) translateX(-9.5em);
+				 -ms-transform: skew(21.3deg) translateX(-9.5em);
+				 -o-transform: skew(21.3deg) translateX(-9.5em);
 				opacity: 0;
 			}
 		  to {
-				right: 14.5em;
+				transform: skew(21.3deg) translateX(-14.5em);
+				 -webkit-transform: skew(21.3deg) translateX(-14.5em);
+				 -moz-transform: skew(21.3deg) translateX(-14.5em);
+				 -ms-transform: skew(21.3deg) translateX(-14.5em);
+				 -o-transform: skew(21.3deg) translateX(-14.5em);
 				opacity: 0.25;
 			}
 		}
 		@keyframes linea3 {
 			from {
-				right: 9.5em;
+				transform: skew(21.3deg) translateX(-9.5em);
+				 -webkit-transform: skew(21.3deg) translateX(-9.5em);
+				 -moz-transform: skew(21.3deg) translateX(-9.5em);
+				 -ms-transform: skew(21.3deg) translateX(-9.5em);
+				 -o-transform: skew(21.3deg) translateX(-9.5em);
 				opacity: 0;
 			}
 		  to {
-				right: 12em;
+				transform: skew(21.3deg) translateX(-12em);
+				 -webkit-transform: skew(21.3deg) translateX(-12em);
+				 -moz-transform: skew(21.3deg) translateX(-12em);
+				 -ms-transform: skew(21.3deg) translateX(-12em);
+				 -o-transform: skew(21.3deg) translateX(-12em);
 				opacity: 0.25;
 			}
 		}
@@ -475,22 +519,33 @@ footer a img {
 			height: 24em;
 		}
 	}
-
 	@media screen and (max-width: 480px) {
 		#header img {
 			width: 80%;
-			padding: 12em 0 2em;
+			padding: 10em 0 2em;
 		}
-		#servicios .texto {
-			width:95%;
+		#header h1 {
+			font-size: 1.5em;
+			padding-bottom: 0.75em;
 		}
-		#servicios .texto h2 {
+		input[type="submit"],
+		input[type="button"],
+		button, .button {
+			height: 2.5em;
+			line-height: 2.5em;
 			font-size: 1.25em;
-			margin-bottom: 1.75em;
 		}
 		section a {
 			min-width: 10em;
 			width: 85%;
+		}
+		#servicios .texto {
+			width:95%;
+			margin: -1em auto;
+		}
+		#servicios .texto h2 {
+			font-size: 1.25em;
+			margin-bottom: 1.5em;
 		}
 		#servicios .texto h2:after {
 		  top: 120%;
@@ -530,5 +585,13 @@ footer a img {
 		}
 		footer {
 			min-height: 24em;
+		}
+	}
+	@media screen and (max-width: 360px) {
+		#servicios .texto h2 {
+			font-size: 1.1em;
+		}
+		.fa-2x {
+    	font-size: 1.5em;
 		}
 	}
