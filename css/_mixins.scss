@@ -1,0 +1,49 @@
+// Mixins
+
+// Mixin media-queries
+
+@mixin respond-to($media) {
+	@if $media == handmini {
+    @media #{$mobile-mini} { @content; }
+  }
+  @else if $media == handhelds {
+    @media #{$mobile} { @content; }
+  }
+  @else if $media == medium-screens {
+    @media #{$tablet} { @content; }
+  }
+  @else if $media == wide-screens {
+    @media #{$desktop} { @content; }
+  }
+}
+
+// Mixin animacion cabecera
+
+@mixin barras($dist: -10.5em) {
+	transform: $skew translateX($dist);
+	-webkit-transform: $skew translateX($dist);
+	-moz-transform: $skew translateX($dist);
+	-ms-transform: $skew translateX($dist);
+	-o-transform: $skew translateX($dist);
+}
+@mixin animacion($numline) {
+	animation: $numline $anim;
+	-webkit-animation: $numline $anim;
+	-moz-animation: $numline $anim;
+	-ms-animation: $numline $anim;
+	-o-animation: $numline $anim;
+}
+
+// Mixin keyframes
+
+@mixin keyframes ($anim-name) {
+    @-webkit-keyframes #{$anim-name}{
+        @content;
+    }
+    @-moz-keyframes #{$anim-name}{
+        @content;
+    }
+    @keyframes #{$anim-name}{
+        @content;
+    }
+}

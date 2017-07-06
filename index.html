@@ -1,14 +1,19 @@
 <!doctype html>
-<html>
+<html lang="es">
+
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Luxury Hotel" />
+  <meta name="description" content="Ambassador Hotel" />
+  <meta name="author" content="Ruben Gamero" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400i,700i,900|Source+Sans+Pro:300">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
   <link rel="stylesheet" href="css/estilos.css" />
   <title>Ambassador Hotel</title>
 </head>
+
 <body>
   <section id="header">
     <div class="lineas">
@@ -25,143 +30,145 @@
   </section>
   <section id="servicios">
     <div class="container">
-    <div class="texto">
-      <h2>Conozca nuestros servicios</h2>
-      <div class="row">
-        <div class="iconos col-xs-6 col-md-4 col-lg-4">
-          <span class="fa fa-wheelchair fa-2x"></span>
-          <p>Accesibilidad</p>
-        </div>
-        <div class="iconos col-xs-6 col-md-4 col-lg-4">
-          <span class="fa fa-credit-card fa-2x"></span>
-          <p>Tarjetas contactless</p>
-        </div>
-        <div class="iconos col-xs-6 col-md-4 col-lg-4">
-          <span class="fa fa-taxi fa-2x"></span>
-          <p>Taxi aeropuerto</p>
-        </div>
-        <div class="iconos col-xs-6 col-md-4 col-lg-4">
-          <span class="fa fa-wifi fa-2x"></span>
-          <p>WiFi banda ancha</p>
-        </div>
-        <div class="iconos col-xs-6 col-md-4 col-lg-4">
-          <span class="fa fa-cutlery fa-2x"></span>
-          <p>Restaurante 24h</p>
-        </div>
-        <div class="iconos col-xs-6 col-md-4 col-lg-4">
-          <span class="fa fa-language fa-2x"></span>
-          <p>Servicio multilengua</p>
+      <div class="texto">
+        <h2>Conozca nuestros servicios</h2>
+        <div class="row">
+          <div class="iconos col-xs-6 col-md-4 col-lg-4">
+            <span class="fa fa-wheelchair fa-2x"></span>
+            <p>Accesibilidad</p>
+          </div>
+          <div class="iconos col-xs-6 col-md-4 col-lg-4">
+            <span class="fa fa-credit-card fa-2x"></span>
+            <p>Tarjetas contactless</p>
+          </div>
+          <div class="iconos col-xs-6 col-md-4 col-lg-4">
+            <span class="fa fa-taxi fa-2x"></span>
+            <p>Taxi aeropuerto</p>
+          </div>
+          <div class="iconos col-xs-6 col-md-4 col-lg-4">
+            <span class="fa fa-wifi fa-2x"></span>
+            <p>WiFi banda ancha</p>
+          </div>
+          <div class="iconos col-xs-6 col-md-4 col-lg-4">
+            <span class="fa fa-cutlery fa-2x"></span>
+            <p>Restaurante 24h</p>
+          </div>
+          <div class="iconos col-xs-6 col-md-4 col-lg-4">
+            <span class="fa fa-language fa-2x"></span>
+            <p>Servicio multilengua</p>
+          </div>
         </div>
       </div>
-    </div>
-    <a id="reser" class="button reserva">Reserve ya</a>
+      <a id="reser" class="button reserva">Reserve ya</a>
     </div>
   </section>
 
-<!-- Pop-up reserva -->
+  <!-- Pop-up reserva -->
 
-<div id="popup" style="display: none;">
-  <div class="content-popup">
+  <div id="popup" style="display: none;">
+    <div class="content-popup">
       <h2>Haga su reserva</h2>
       <form method="post" action="#">
-          <div class="col-xs-12 col-sm-6">
-            <input type="text" name="nombres" id="nombres" value="" placeholder="Nombres" />
-          </div>
-          <div class="col-xs-12 col-sm-6">
-            <input type="text" name="apellidos" id="apellidos" value="" placeholder="Apellidos" />
-          </div>
-          <div class="col-xs-12 col-sm-6 correo">
-            <input type="email" name="email" id="email" value="" placeholder="Email" />
-          </div>
-          <div class="col-xs-12 col-sm-6">
-            <input type="text" name="company" id="company" value="" placeholder="Empresa" />
-          </div>
-          <div class="col-xs-12">
-            <textarea name="mensaje" id="mensaje" placeholder="Escriba su mensaje" rows="4"></textarea>
-          </div>
-          <ul class="actions">
-            <li><input type="submit" value="Envíe su mensaje" class="special" /></li>
-            <li><button type="reset" value="Reset" class="formbutton left"><i class="fa fa-repeat"></i></button></li>
-            <li><button id="close" class="formbutton right"><i class="fa fa-times"></i></button></li>
-          </ul>
-    </form>
-  </div>
-</div>
-<div class="popup-overlay"></div>
-
-<!-- Footer -->
-
-<footer>
-  <div class="container">
-    <div class="col-lg-12">
-      <h2>Síguenos</h2>
-      <a href="#"><img src="img/fb-icon.svg" /></a>
-      <a href="#"><img src="img/inst-icon.svg" /></a>
-      <a href="#"><img src="img/tw-icon.svg" /></a>
-      <h3>Ambassador</h3>
-      <h4>Hotel & Resort</h4>
+        <div class="col-xs-12 col-sm-6">
+          <input type="text" name="nombres" id="nombres" value="" placeholder="Nombres" />
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <input type="text" name="apellidos" id="apellidos" value="" placeholder="Apellidos" />
+        </div>
+        <div class="col-xs-12 col-sm-6 correo">
+          <input type="email" name="email" id="email" value="" placeholder="Email" />
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <input type="text" name="company" id="company" value="" placeholder="Empresa" />
+        </div>
+        <div class="col-xs-12">
+          <textarea name="mensaje" id="mensaje" placeholder="Escriba su mensaje" rows="4"></textarea>
+        </div>
+        <ul class="actions">
+          <li><input type="submit" value="Envíe su mensaje" class="special" /></li>
+          <li><button type="reset" value="Reset" class="formbutton left"><i class="fa fa-repeat"></i></button></li>
+          <li><button id="close" class="formbutton right"><i class="fa fa-times"></i></button></li>
+        </ul>
+      </form>
     </div>
   </div>
-</footer>
+  <div class="popup-overlay"></div>
 
-<!-- Scripts -->
+  <!-- Footer -->
 
-<script
-    src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"
-    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-    crossorigin="anonymous">
-</script>
-<script
-    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous">
-</script>
-<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/scrolling-nav.js"></script>
-<script src="js/mobile-chrome-vh-fix.js"></script>
-<script>
-$(document).ready(function() {
-  $('#reser').click(function(){
-    if ($(window).height() < 500) {
-       $('textarea').attr('rows', '3');
-    }
-    $('#popup').fadeIn('fast');
-    $('.content-popup').animate({'margin-top': '10px'}, 400);
-    $('.popup-overlay').fadeIn('fast');
-    return false;
-  });
-  $('#close').click(function(){
-    $('#popup').fadeOut('fast');
-    $('.content-popup').animate({'margin-top': '-20px'}, 400);
-    $('.popup-overlay').fadeOut('fast');
-    $("#result").css('display', 'none');
-    return false;
-  });
-  $('.popup-overlay').click(function(){
-    $('#popup').fadeOut('fast');
-    $('.content-popup').animate({'margin-top': '-20px'}, 400);
-    $('.popup-overlay').fadeOut('fast');
-    $("#result").css('display', 'none');
-    return false;
-  });
-});
-</script>
-<script>
-  window.sr = ScrollReveal({ duration: 1000 });
-  sr.reveal('.texto');
-</script>
-<script>
-  var vhFix = new VHChromeFix([
-    {
-      selector: '#header',
-      vh: 100
-    },
-    {
-      selector: '.lineas',
-      vh: 100
-    }
-  ]);
-</script>
+  <footer>
+    <div class="container">
+      <div class="col-lg-12">
+        <h2>Síguenos</h2>
+        <a href="#"><img src="img/fb-icon.svg" /></a>
+        <a href="#"><img src="img/inst-icon.svg" /></a>
+        <a href="#"><img src="img/tw-icon.svg" /></a>
+        <h3>Ambassador</h3>
+        <h4>Hotel & Resort</h4>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+  </script>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/scrolling-nav.js"></script>
+  <script src="js/mobile-chrome-vh-fix.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#reser').click(function() {
+        if ($(window).height() < 500) {
+          $('textarea').attr('rows', '3');
+        }
+        $('#popup').fadeIn('fast');
+        $('.content-popup').animate({
+          'margin-top': '10px'
+        }, 400);
+        $('.popup-overlay').fadeIn('fast');
+        return false;
+      });
+      $('#close').click(function() {
+        $('#popup').fadeOut('fast');
+        $('.content-popup').animate({
+          'margin-top': '-20px'
+        }, 400);
+        $('.popup-overlay').fadeOut('fast');
+        $("#result").css('display', 'none');
+        return false;
+      });
+      $('.popup-overlay').click(function() {
+        $('#popup').fadeOut('fast');
+        $('.content-popup').animate({
+          'margin-top': '-20px'
+        }, 400);
+        $('.popup-overlay').fadeOut('fast');
+        $("#result").css('display', 'none');
+        return false;
+      });
+    });
+  </script>
+  <script>
+    window.sr = ScrollReveal({
+      duration: 1000
+    });
+    sr.reveal('.texto');
+  </script>
+  <script>
+    var vhFix = new VHChromeFix([{
+        selector: '#header',
+        vh: 100
+      },
+      {
+        selector: '.lineas',
+        vh: 100
+      }
+    ]);
+  </script>
 </body>
+
 </html>
