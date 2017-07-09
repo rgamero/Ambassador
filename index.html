@@ -9,7 +9,6 @@
   <meta name="author" content="Ruben Gamero" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400i,700i,900|Source+Sans+Pro:300">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
   <link rel="stylesheet" href="css/estilos.css" />
   <title>Ambassador Hotel</title>
 </head>
@@ -34,27 +33,27 @@
         <h2>Conozca nuestros servicios</h2>
         <div class="row">
           <div class="iconos col-xs-6 col-md-4 col-lg-4">
-            <span class="fa fa-wheelchair fa-2x"></span>
+            <span class="fa fa-wheelchair fa-3x"></span>
             <p>Accesibilidad</p>
           </div>
           <div class="iconos col-xs-6 col-md-4 col-lg-4">
-            <span class="fa fa-credit-card fa-2x"></span>
+            <span class="fa fa-credit-card fa-3x"></span>
             <p>Tarjetas contactless</p>
           </div>
           <div class="iconos col-xs-6 col-md-4 col-lg-4">
-            <span class="fa fa-taxi fa-2x"></span>
+            <span class="fa fa-taxi fa-3x"></span>
             <p>Taxi aeropuerto</p>
           </div>
           <div class="iconos col-xs-6 col-md-4 col-lg-4">
-            <span class="fa fa-wifi fa-2x"></span>
+            <span class="fa fa-wifi fa-3x"></span>
             <p>WiFi banda ancha</p>
           </div>
           <div class="iconos col-xs-6 col-md-4 col-lg-4">
-            <span class="fa fa-cutlery fa-2x"></span>
+            <span class="fa fa-cutlery fa-3x"></span>
             <p>Restaurante 24h</p>
           </div>
           <div class="iconos col-xs-6 col-md-4 col-lg-4">
-            <span class="fa fa-language fa-2x"></span>
+            <span class="fa fa-language fa-3x"></span>
             <p>Servicio multilengua</p>
           </div>
         </div>
@@ -125,29 +124,27 @@
         if ($(window).height() < 500) {
           $('textarea').attr('rows', '3');
         }
-        $('#popup').fadeIn('fast');
+        $('#popup').animate({ opacity: 'toggle' }, 400, 'easeInOutCubic');
         $('.content-popup').animate({
-          'margin-top': '10px'
-        }, 400);
+          'top': '20px'
+        }, 400, 'easeInOutCubic');
         $('.popup-overlay').fadeIn('fast');
         return false;
       });
       $('#close').click(function() {
         $('#popup').fadeOut('fast');
         $('.content-popup').animate({
-          'margin-top': '-20px'
-        }, 400);
+          'top': '-20px'
+        }, 400, 'easeInOutCubic');
         $('.popup-overlay').fadeOut('fast');
-        $("#result").css('display', 'none');
         return false;
       });
       $('.popup-overlay').click(function() {
         $('#popup').fadeOut('fast');
         $('.content-popup').animate({
-          'margin-top': '-20px'
-        }, 400);
+          'top': '-20px'
+        }, 400, 'easeInOutCubic');
         $('.popup-overlay').fadeOut('fast');
-        $("#result").css('display', 'none');
         return false;
       });
     });

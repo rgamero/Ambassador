@@ -19,7 +19,7 @@
 
 // Mixin animacion cabecera
 
-@mixin barras($dist: -10.5em) {
+@mixin barras($dist: -15rem) {
 	transform: $skew translateX($dist);
 	-webkit-transform: $skew translateX($dist);
 	-moz-transform: $skew translateX($dist);

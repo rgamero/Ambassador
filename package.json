@@ -3,6 +3,10 @@
   "version": "1.0.1",
   "description": "Ambassador web joint",
   "main": "index.js",
+  "repository" : {
+    "type": "git",
+    "url" : "https://github.com/rgamero/ambassador.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node-sass --watch css/estilos.scss css/estilos.css --output-style nested"

@@ -42,6 +42,9 @@
 		@include respond-to(handhelds) {
 			padding-bottom: 0.75em;
 		}
+		@include respond-to(handmini) {
+			font-size: 1.75rem;
+		}
 	}
 
 	img {
@@ -54,7 +57,7 @@
 			width: 22rem;
 		}
 		@include respond-to(handhelds) {
-			width: 45%;
+			width: 18rem;
 			padding-top: 8rem;
 		}
 	}
@@ -68,7 +71,7 @@
 
 	.line {
 		position: absolute;
-		width: 1.3em;
+		width: 2rem;
 		height: 100%;
 		outline: 1px solid transparent;
 		@include respond-to(medium-screens) {
@@ -77,28 +80,28 @@
 
 		&:nth-child(1) {
 			background: $color1;
-			@include barras(-18em);
+			@include barras(-25.5rem);
 			@include animacion(linea1);
 			will-change: transform, opacity;
 		}
 
 		&:nth-child(2) {
 			background: $color2;
-			@include barras(-15.5em);
+			@include barras(-22rem);
 			@include animacion(linea2);
 			will-change: transform, opacity;
 		}
 
 		&:nth-child(3) {
 			background: $color3;
-			@include barras(-13em);
+			@include barras(-18.5rem);
 			@include animacion(linea3);
 			will-change: transform, opacity;
 		}
 
 		&:nth-child(4) {
 			background: $color4;
-			@include barras(-10.5em);
+			@include barras(-15rem);
 			@include animacion(linea4);
 			will-change: opacity;
 		}
@@ -112,7 +115,7 @@
 	}
 
 	to {
-		@include barras(-18em);
+		@include barras(-25.5rem);
 		opacity: 1;
 	}
 };
@@ -123,7 +126,7 @@
 	}
 
 	to {
-		@include barras(-15.5em);
+		@include barras(-22rem);
 		opacity: 1;
 	}
 };
@@ -134,7 +137,7 @@
 	}
 
 	to {
-		@include barras(-13em);
+		@include barras(-18.5rem);
 		opacity: 1;
 	}
 };
@@ -155,7 +158,7 @@
 		}
 
 		to {
-			@include barras(-18em);
+			@include barras(-25.5rem);
 			opacity: 0.25;
 		}
 	};
@@ -166,7 +169,7 @@
 		}
 
 		to {
-			@include barras(-15.5em);
+			@include barras(-22rem);
 			opacity: 0.25;
 		}
 	};
@@ -177,7 +180,7 @@
 		}
 
 		to {
-			@include barras(-13em);
+			@include barras(-18.5rem);
 			opacity: 0.25;
 		}
 	};
@@ -199,81 +202,88 @@
 		repeat: no-repeat;
 		size: auto;
 	}
-	box-shadow: 1px 1px 10px #606060;
+	box-shadow: 1px 1px 10px $color3;
 	padding-top: 3em;
 	min-height: 768px;
-}
+	.container {
+		.texto {
+			font: {
+				family: 'Playfair Display', serif;
+			}
+			color: #2d2d2d;
+			opacity: 1;
+			width: 75%;
+			margin: auto;
+			padding: 30px;
+			background-color: rgba(172, 172, 172, 0.7);
+			box-shadow: 1px 1px 10px #606060;
+			border-radius: 4px;
+			@include respond-to(medium-screens) {
+				width: 85%;
+			}
+			@include respond-to(handhelds) {
+				width: 95%;
+				margin: -1em auto;
+			}
+			h2 {
+				position: relative;
+				font: {
+					size: 3.5rem;
+					style: italic;
+					weight: 700;
+				}
+				margin-bottom: 4.5rem;
+				text-shadow: 1px 1px 10px #606060;
 
-#servicios .texto {
-	font: {
-		family: 'Playfair Display', serif;
-		weight: 400;
-		size: 1.4em;
-	}
-	color: #2d2d2d;
-	opacity: 1;
-	width: 75%;
-	margin: auto;
-	padding: 30px;
-	background-color: rgba(172, 172, 172, 0.7);
-	box-shadow: 1px 1px 10px #606060;
-	border-radius: 4px;
-	@include respond-to(handhelds) {
-		width: 95%;
-		margin: -1em auto;
-	}
-}
+				&::after {
+					content: '';
+					width: 100%;
+					border-bottom: solid 1px #2d2d2d;
+					position: absolute;
+					left: 0;
+					top: 150%;
+					z-index: 1;
+				}
+				@include respond-to(medium-screens) {
+					font-size: 2.5rem;
+					margin-bottom: 3.5rem;
+				}
+				@include respond-to(handhelds) {
+					font-size: 2.25rem;
+					margin-bottom: 3rem;
 
-#servicios .texto h2 {
-	position: relative;
-	font: {
-		size: 2em;
-		style: italic;
-		weight: 700;
-	}
-	text-shadow: 1px 1px 10px #606060;
-	margin-bottom: 5rem;
-
-	&::after {
-		content: '';
-		width: 100%;
-		border-bottom: solid 1px #2d2d2d;
-		position: absolute;
-		left: 0;
-		top: 150%;
-		z-index: 1;
-	}
-	@include respond-to(medium-screens) {
-		font-size: 2.75rem;
-		margin-bottom: 3.5rem;
-	}
-	@include respond-to(handhelds) {
-		font-size: 1.25em;
-		margin-bottom: 1.5em;
-
-		&::after {
-			top: 120%;
+					&::after {
+						top: 120%;
+					}
+				}
+				@include respond-to(handmini) {
+					font-size: 2rem;
+				}
+			}
 		}
-	}
-	@include respond-to(handmini) {
-		font-size: 1.1em;
 	}
 }
 
 .iconos {
 	text-align: center;
-	margin-bottom: 1em;
+	margin-bottom: 2.25rem;
+	@include respond-to(medium-screens) {
+		margin-bottom: 1.5rem;
+	}
 
 	p {
-		font-weight: 400;
-		font-style: italic;
+		font: {
+			size: 1.4em;
+			weight: 400;
+			style: italic;
+		}
 		margin-top: 0.5em;
 		@include respond-to(handhelds) {
 			font-size: 1.6rem;
 			margin-top: 0.75rem;
 		}
 		@include respond-to(handmini) {
-			font-size: 1.3rem;
+			font-size: 1.35rem;
 		}
 	}
 }
@@ -281,7 +291,7 @@
 
 footer {
 	background-color: $color1;
-	min-height: 24rem;
+	min-height: 28rem;
 	text-align: center;
 	@include respond-to(handmini) {
 		min-height: 30rem;
@@ -383,28 +393,29 @@ input[type="submit"] {
 }
 /* Pop-up */
 #popup {
-	left: 0;
 	position: fixed;
+	left: 50%;
+  transform: translate(-50%, 0);
 	top: 0;
-	width: 100%;
-	z-index: 1001;
-}
-
-.content-popup {
-	text-align: center;
-	margin: -20px auto 0;
-	position: relative;
-	padding: 20px 40px;
-	height: 28rem;
 	width: 40%;
-	border-radius: 6px;
-	background-color: #FFFFFF;
-	box-shadow: 0 2px 5px #666666;
+	z-index: 1001;
 	@include respond-to(medium-screens) {
 		width: 60%;
 	}
 	@include respond-to(handhelds) {
 		width: 95%;
+	}
+}
+
+.content-popup {
+	position: relative;
+	padding: 20px 40px;
+	height: 28.5rem;
+	width: 100%;
+	border-radius: 6px;
+	background-color: #FFFFFF;
+	box-shadow: 0 2px 5px #666666;
+	@include respond-to(handhelds) {
 		padding: 20px;
 		height: 32rem;
 	}
@@ -417,23 +428,79 @@ input[type="submit"] {
 			font-size: 2.4rem;
 		}
 	}
+
+	form {
+		.actions {
+			list-style-type: none;
+			li {
+				.formbutton {
+					position: absolute;
+					bottom: 1rem;
+					padding: 0;
+					margin: 0;
+					box-shadow: none;
+					@include respond-to(handhelds) {
+						bottom: 0.5rem;
+					}
+
+					&:hover {
+						background-color: transparent;
+					}
+
+					&:hover i {
+						color: #7C7C7C;
+					}
+
+					&:focus {
+						border: none !important;
+						outline: none !important;
+					}
+
+					i {
+						font-size: 2.4rem;
+						color: #CCCCCC;
+						-moz-transition: color 0.2s ease-in-out, color 0.2s ease-in-out;
+						-webkit-transition: color 0.2s ease-in-out, color 0.2s ease-in-out;
+						-ms-transition: color 0.2s ease-in-out, color 0.2s ease-in-out;
+						transition: color 0.2s ease-in-out, color 0.2s ease-in-out;
+						@include respond-to(handhelds) {
+							font-size: 2.2rem;
+						}
+
+					}
+				}
+				.left {
+					left: 3.5rem;
+					@include respond-to(medium-screens) {
+						left: 2rem;
+					}
+				}
+
+				.right {
+					right: 3.5rem;
+					@include respond-to(medium-screens) {
+						right: 2rem;
+					}
+
+					i {
+						font-size: 3rem;
+						@include respond-to(handhelds) {
+							font-size: 2.7rem;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	form > div {
+		padding: 0 !important;
+	}
 }
 @media (min-width: 481px) and (max-width: 768px) {
 	.content-popup {
 		height: 34rem;
 	}
-}
-
-form > div {
-	padding: 0 !important;
-}
-
-.actions {
-	list-style-type: none;
-}
-
-.correo {
-	position: relative;
 }
 
 input[type="email"],
@@ -488,63 +555,6 @@ input[type="submit"].special {
 	}
 }
 
-.formbutton {
-	position: absolute;
-	bottom: 1rem;
-	padding: 0;
-	margin: 0;
-	box-shadow: none;
-	@include respond-to(handhelds) {
-		bottom: 0.5rem;
-	}
-
-	&:hover {
-		background-color: transparent;
-	}
-
-	&:focus {
-		border: none !important;
-		outline: none !important;
-	}
-
-	i {
-		font-size: 2.4rem;
-		color: #CCCCCC;
-		-moz-transition: color 0.2s ease-in-out, color 0.2s ease-in-out;
-		-webkit-transition: color 0.2s ease-in-out, color 0.2s ease-in-out;
-		-ms-transition: color 0.2s ease-in-out, color 0.2s ease-in-out;
-		transition: color 0.2s ease-in-out, color 0.2s ease-in-out;
-		@include respond-to(handhelds) {
-			font-size: 2.2rem;
-		}
-
-		&:hover {
-			color: #7C7C7C;
-		}
-	}
-}
-
-.left {
-	left: 3.5rem;
-	@include respond-to(medium-screens) {
-		left: 2rem;
-	}
-}
-
-.right {
-	right: 3.5rem;
-	@include respond-to(medium-screens) {
-		right: 2rem;
-	}
-
-	i {
-		font-size: 3rem;
-		@include respond-to(handhelds) {
-			font-size: 2.7rem;
-		}
-	}
-}
-
 .popup-overlay {
 	left: 0;
 	position: fixed;
@@ -558,7 +568,7 @@ input[type="submit"].special {
 }
 /* Media queries */
 @media screen and (max-width: 361px) {
-	.fa-2x {
-		font-size: 1.5em;
+	.fa-3x {
+		font-size: 3.5rem;
 	}
 }
